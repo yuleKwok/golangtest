@@ -15,6 +15,12 @@ arr := creatArray()
 
 	
 }
+func CreateAndSoftArray() []int64 {
+	_dataArray := creatArray()
+	HeapSort(_dataArray)
+	return _dataArray
+
+}
 func creatArray() []int64 {
 	// 植入种子
 	rand.Seed(time.Now().Unix())
